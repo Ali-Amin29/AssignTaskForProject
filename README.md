@@ -22,21 +22,33 @@ Employee
 ## Learning How To Implement Project on Your PC
 
 <h2>First</h2>
+<br>
 Upload your project by -> Clone the project 
+<br>
 git clone https://github.com/Ali-Amin29/AssignTaskForProject.git .
+<br>
 <h2>Second</h2>
 Now need to Run the dependencies
+<br>
 1- <strong>composer install</strong>
+<br>
 2- <strong>php artisan migrate </strong>  >> how you migrate your project DB will be Created 
 >> then will ask you ?? the DB not Exist will be created 
+<br>
 OR
+<br>
 >> you will creat DB With Name OF Project
+<br>
 3- <strong>php artisan serve </strong> 
+<br>
 4- <strong>npm install </strong> 
+<br>
 5-<strong>npm run dev</strong> >> For Design purposes
+<br>
 
 ## How Employee works
 
 in beginning
+<br>
 you will find no tasks in your application afer first registration
 can assign task for yourself
