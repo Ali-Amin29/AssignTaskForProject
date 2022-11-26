@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\Task;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -15,7 +16,8 @@ class ProjectController extends Controller
     public function index()
     {
         $project=Project::get();
-        return view('project',['projects'=>$project]);
+        $task=Task::where('project_id','!=',null)->get();
+        return view('project',['projects'=>$project,'tasks'=>$task]);
     }
 
     /**
@@ -84,6 +86,16 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+    $project=Project::find($id);
+    $task=Task::where('project_id','=',$id)->get();
+       if ($task->isEmpty() ){
+            $project->delete();
+            return redirect()->back()->with(['success'=>'The Project was successfully deleted']);
+        }
+        else{
+            return redirect()->back()->with(['danger'=>'The Project have Tasks Processing You Cant delete it  ' ]);;
+       }
+
     }
 }

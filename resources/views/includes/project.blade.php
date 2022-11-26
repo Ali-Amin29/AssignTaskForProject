@@ -1,4 +1,13 @@
 {{--  show all project for admin dashBoard  --}}
+@if( Session::has('success') )
+<div class="alert alert-success" role="alert">
+    {{ Session::get('success') }}
+</div>
+@elseif(( Session::has('danger') ))
+<div class="alert alert-danger" role="alert">
+    {{ Session::get('danger') }}
+</div>
+@endif
 <table class="table text-center">
     <thead>
       <tr>
@@ -18,10 +27,11 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-primary">Edit</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-danger">Delete</button>
+                        <form method="POST" action={{ URL::route('project.destroy', [$project->id]) }}>
+                            @csrf
+                            @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
                     </div>
                 </div>
             </div>
