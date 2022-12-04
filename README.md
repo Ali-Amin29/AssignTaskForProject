@@ -10,14 +10,21 @@
 ## About Project
 
 This project for Assign Task for Employee
-super_Visior
-1-Create Task
-2- Create Project
-3- Assign Task to employee
+super_Visior: admin
 
-Employee
+1- Add Customer
+2- Create Project
+3- Assign Customer to employee
+
+account : admin@gmail.com
+password : 12345678
+
+Employee: user
+
 1- Show Employee tasks  
 2- Assign Task by himself
+
+Can Rejestired Employee
 
 ## Learning How To Implement Project on Your PC
 
@@ -50,5 +57,5 @@ OR
 
 in beginning
 <br>
-you will find no tasks in your application afer first registration
-can assign task for yourself
+you will find no Customer in your application afer first registration
+can assign Customer for yourself
