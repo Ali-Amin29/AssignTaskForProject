@@ -4,8 +4,8 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Task Id</th>
-        <th scope="col">Task Name</th>
+        <th scope="col">Customer Id</th>
+        <th scope="col">Customer Name</th>
         <th scope="col">Proj Id</th>
         <th scope="col">User Id</th>
         <th scope="col">Actions</th>
@@ -28,6 +28,7 @@
                         @csrf
                         @method('PUT')
                         <div class="col">
+                            <span> Write: { (call, visit or follow up) } </span>
                             <div class="form-floating">
                                 <textarea class="form-control" name="description" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">Comments</label>

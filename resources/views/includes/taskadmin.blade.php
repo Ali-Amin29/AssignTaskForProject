@@ -4,8 +4,8 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Task Id</th>
-        <th scope="col">Task Name</th>
+        <th scope="col">Customer Id</th>
+        <th scope="col">Customer Name</th>
         <th scope="col">Proj Id</th>
         <th scope="col">User Id</th>
         <th scope="col">Actions</th>

@@ -5,7 +5,7 @@
         <th scope="col">#</th>
         <th scope="col">User Id</th>
         <th scope="col">User Name</th>
-        <th scope="col">Assign Task For User</th>
+        <th scope="col">Assign Customer For User</th>
       </tr>
     </thead>
     <tbody>

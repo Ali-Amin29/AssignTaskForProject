@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ba018504126670e19bad74bfd50b7dc",
+    "content-hash": "34f53584a578a4322161ed7ff743a0d1",
     "packages": [
+        {
+            "name": "abdallahmohammed/urway-laravel",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AbdallaMohammed/laravel-urway.git",
+                "reference": "3021bd8208550ed03043d57f58e194a108153d12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AbdallaMohammed/laravel-urway/zipball/3021bd8208550ed03043d57f58e194a108153d12",
+                "reference": "3021bd8208550ed03043d57f58e194a108153d12",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=6.0",
+                "illuminate/support": "^5.2|^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.4|8.*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0|^4.0|^5.0",
+                "phpunit/phpunit": "^5.3|~6.0|~8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "URWay\\URWayServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "URWay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AbdallahMohammed",
+                    "email": "abdallah.r660@gmail.com"
+                }
+            ],
+            "description": "URWAY REST API package for Laravel",
+            "support": {
+                "issues": "https://github.com/AbdallaMohammed/laravel-urway/issues",
+                "source": "https://github.com/AbdallaMohammed/laravel-urway/tree/1.2.2"
+            },
+            "time": "2022-05-21T12:00:33+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",

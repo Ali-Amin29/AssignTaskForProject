@@ -2,7 +2,7 @@
 <table class="table text-center">
     <thead>
       <tr>
-        <th scope="col">Task Available</th>
+        <th scope="col">Customers Available</th>
       </tr>
     </thead>
     <tbody>
